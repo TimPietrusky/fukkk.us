@@ -8,9 +8,10 @@
 ## How does it work?
 
 1. Suggest awesome web creations / demos / experiments to [@fukkk_us](http://twitter.com/fukkk_us)
-2. [@fukkk_us](http://twitter.com/fukkk_us) shares those links on Twitter
-3. You favorite the best web creations / demos / experiments each month
-4. We send you the top 25 at the end of each month
+2. [@fukkk_us](http://twitter.com/fukkk_us) shares these suggestions on Twitter
+3. The community favorites the best web creations / demos / experiments
+4. We curate a list of the top 25 at the end of each month
+5. And you enjoy only the caziest stuff of the interwebs inside your mailbox!
 
 ## License
 
