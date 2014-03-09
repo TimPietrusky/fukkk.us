@@ -144,6 +144,12 @@ button {
 	padding: $unit--alpha;
 }
 
+.beta {
+	@include breakpoint(small) {
+		margin-top: $unit--alpha * 2;
+	}
+}
+
 
 section {
 	@extend .cf;
