@@ -13,6 +13,18 @@
 4. We curate a list of the top 25 at the end of each month
 5. And you enjoy only the caziest stuff of the interwebs inside your mailbox!
 
+## FUKKK.us Tweet Template
+
+```
+[  ]
+
+
+
+by 
+
+#fukkk2014
+```
+
 ## License
 
 MIT 
