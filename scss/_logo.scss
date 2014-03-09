@@ -1,0 +1,48 @@
+$color-alpha: #000;
+
+$list-alpha: 
+#71f4c8 #71bdf4 #8771f4 #e971f4 #f4719d 
+;
+
+$unit-alpha: length($list-alpha);
+$unit-beta: 1.75s;
+$unit-gamma: 100% / ($unit-alpha);
+
+.logo {
+  span {   
+    @for $i from 1 through $unit-alpha {
+      &:nth-child(#{$unit-alpha}n+#{$i}) {
+        @include animation(candy linear $unit-beta infinite forwards (-$unit-beta / $unit-alpha * $i));
+      }
+    }
+  }
+}
+
+@include keyframes(candy) {
+    @for $i from 1 through ($unit-alpha + 1) {
+      #{$unit-gamma * ($i - 1)} {
+        color: darken(nth($list-alpha, ($i % $unit-alpha) + 1), 15%);
+      }
+    }
+}
+
+
+
+$unit-alpha: length($list-alpha);
+$unit-beta: 5.25s;
+$unit-gamma: 100% / ($unit-alpha);
+
+.button__alpha {
+  @include animation(candyy ease-in-out $unit-beta infinite forwards (-$unit-beta / $unit-alpha));
+}
+
+@include keyframes(candyy) {
+    @for $i from 1 through ($unit-alpha + 1) {
+      #{$unit-gamma * ($i - 1)} {
+        $this-color: lighten(nth($list-alpha, ($i % $unit-alpha) + 1), 15%);
+
+        background: $this-color;
+        color: reverse-lightness($this-color);
+      }
+    }
+}
