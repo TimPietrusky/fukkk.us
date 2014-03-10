@@ -37,6 +37,11 @@ body {
 	}
 }
 
+.wrapper {
+	max-width: 80em;
+	margin: 0 auto;
+}
+
 a {
 	text-decoration: none;
 	color: reverse-lightness(#71bdf4);
@@ -61,9 +66,9 @@ h2 {
 }
 
 h3 {
-	font: 400 4.5em $font--alpha;
+	font: 400 3.5em $font--alpha;
 	text-align: center;
-	margin: $unit--alpha / 2 0 0 0;
+	margin: $unit--alpha / 4 0 0 0;
 	color: #fff;
 
 	&.vote {
