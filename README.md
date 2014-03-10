@@ -1,7 +1,7 @@
 # fukkk.us
 
 
-25 awesome web creations every month! 
+Top 25 web creations at the end of each month via email! 
 
 [fukkk.us](http://fukkk.us)
 
@@ -11,7 +11,7 @@
 2. [@fukkk_us](http://twitter.com/fukkk_us) shares these suggestions on Twitter
 3. The community favorites the best web creations / demos / experiments
 4. We curate a list of the top 25 at the end of each month
-5. And you enjoy only the caziest stuff of the interwebs inside your mailbox!
+5. And you enjoy only the craziest stuff of the interwebs inside your mailbox!
 
 ## FUKKK.us Tweet Template
 
