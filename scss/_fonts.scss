@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'fukkk';
+  src:url('../fonts/fukkk.eot?-j1bxwc');
+  src:url('../fonts/fukkk.eot?#iefix-j1bxwc') format('embedded-opentype'),
+    url('../fonts/fukkk.woff?-j1bxwc') format('woff'),
+    url('../fonts/fukkk.ttf?-j1bxwc') format('truetype'),
+    url('../fonts/fukkk.svg?-j1bxwc#fukkk') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'fukkk';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+  content: "\e600";
+}
+.icon-github:before {
+  content: "\e601";
+}
+.icon-envelope:before {
+  content: "\e602";
+}
+.icon-clipboard:before {
+  content: "\e603";
+}

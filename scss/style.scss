@@ -2,10 +2,12 @@
 $default-spacing: .85em;
 
 @import "compass", 
+				"fonts",
 				"modules",
 				"bullgrid",
 				"logo",
-				"blocks"   
+				"blocks",
+				"vote" 
 ;
 @import url("http://fonts.googleapis.com/css?family=Lato:400,700");
 
@@ -14,7 +16,7 @@ $unit--alpha: .85em;
 $font--alpha: 'Lato', sans-serif;
 
 $list--alpha: #71f4c8 #71bdf4 #8771f4 #e971f4 #f4719d;
-$fukkk-color-list--neutral: #000 #fff;
+$fukkk-color-list--neutral: #333 #777;
 
 $fukkk-color--background: #3c3c3c;
 
@@ -44,10 +46,10 @@ body {
 
 a {
 	text-decoration: none;
-	color: reverse-lightness(#71bdf4);
+	color: #111;
 
   &:hover {
-		color: #71bdf4;
+		color: #fff;
 	}
 }
 
@@ -70,18 +72,13 @@ h3 {
 	text-align: center;
 	margin: $unit--alpha / 4 0 0 0;
 	color: #fff;
+}
 
-	&.vote {
-		@include animation(candyy ease-in-out $unit-beta infinite forwards -2s);
-		a {
-			color: #fff;
-
-		  &:hover {
-				color: #fff;
-    	  border-bottom: .01em solid #fff;
-			}	
-		}
-	}
+hr {
+	border: none;
+	height: $unit--alpha / 2;
+	background: #fff;
+	margin: $unit--alpha 0;
 }
 
 input[type="email"] {

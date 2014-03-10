@@ -36,3 +36,4 @@ function spanInjection(el) {
 
 var logo = spanInjection(document.querySelector('.logo'));
 var button = spanInjection(document.querySelector('.button__alpha'));
+var vote = spanInjection(document.querySelector('.vote'));
