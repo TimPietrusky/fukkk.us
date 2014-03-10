@@ -147,6 +147,30 @@ button {
 	}
 }
 
+.list__alpha {
+	counter-reset: list__alpha;
+
+	li {
+		position: relative;
+		padding-left: 2.25em;
+
+		&:before {
+			/*position: absolute;
+			top: 0;
+			left: 0;
+			text-align: center;
+			width: 100%;
+			padding: $unit--alpha / 2;
+			font-size: .85em;
+			line-height: .75em;
+			opacity: .5;*/
+			margin-left: -1.85em;
+		  counter-increment: list__alpha; 
+		  content: "#" counter(list__alpha) " | ";
+		}
+	}
+}
+
 .list__neutral {
 	p, li {
 		$i: 1;
