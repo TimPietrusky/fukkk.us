@@ -4,7 +4,8 @@ $default-spacing: .85em;
 @import "compass", 
 				"modules",
 				"bullgrid",
-				"logo"      
+				"logo",
+				"blocks"   
 ;
 @import url("http://fonts.googleapis.com/css?family=Lato:400,700");
 
@@ -59,6 +60,25 @@ h2 {
 	margin: 0 0 $unit--alpha 0;
 }
 
+h3 {
+	font: 400 4.5em $font--alpha;
+	text-align: center;
+	margin: $unit--alpha / 2 0 0 0;
+	color: #fff;
+
+	&.vote {
+		@include animation(candyy ease-in-out $unit-beta infinite forwards -2s);
+		a {
+			color: #fff;
+
+		  &:hover {
+				color: #fff;
+    	  border-bottom: .01em solid #fff;
+			}	
+		}
+	}
+}
+
 input[type="email"] {
 	width: 100%;
 	border: none;
@@ -70,7 +90,7 @@ input[type="email"] {
 	margin: 0;
 
 	@include breakpoint(small) {
-		margin: unit--alpha 0;
+		margin: $unit--alpha 0 0 0;
 	}
 }
 
@@ -146,18 +166,29 @@ button {
 
 .beta {
 	@include breakpoint(small) {
-		margin-top: $unit--alpha * 2;
+		margin-top: 0;
 	}
 }
 
 
 section {
 	@extend .cf;
+
+	&.black {
+	}
+
+	&.vote {
+		padding: $unit--alpha $unit--alpha;
+		margin: $unit--alpha 0;
+		border-top: $unit--alpha solid #fff;
+		border-bottom: $unit--alpha solid $fukkk-color--background; 
+	}
 }
 
 footer {
+	@extend %block-white;
+
   margin-top: $unit--alpha * 2;
-  background: #fff;
   padding: 0 $unit--alpha 0 $unit--alpha;
 
   .list__neutral {
