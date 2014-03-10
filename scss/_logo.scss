@@ -5,12 +5,12 @@ $list-alpha:
 ;
 
 $unit-alpha: length($list-alpha);
-$unit-beta: 1.75s;
+$unit-beta: 6.75s;
 $unit-gamma: 100% / ($unit-alpha);
 
 .logo {
   span {   
-    @for $i from 1 through $unit-alpha {
+    @for $i from 0 through $unit-alpha {
       &:nth-child(#{$unit-alpha}n+#{$i}) {
         @include animation(candy linear $unit-beta infinite forwards (-$unit-beta / $unit-alpha * $i));
       }
@@ -29,7 +29,7 @@ $unit-gamma: 100% / ($unit-alpha);
 
 
 $unit-alpha: length($list-alpha);
-$unit-beta: 5.25s;
+$unit-beta: 8.25s;
 $unit-gamma: 100% / ($unit-alpha);
 
 .button__alpha {
@@ -37,7 +37,7 @@ $unit-gamma: 100% / ($unit-alpha);
 }
 
 @include keyframes(candyy) {
-    @for $i from 1 through ($unit-alpha + 1) {
+    @for $i from 0 through ($unit-alpha + 1) {
       #{$unit-gamma * ($i - 1)} {
         $this-color: lighten(nth($list-alpha, ($i % $unit-alpha) + 1), 15%);
 
