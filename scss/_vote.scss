@@ -1,3 +1,11 @@
 .vote {
-  @include animation(candyy ease-in-out $unit-beta infinite forwards -2s);
+  //@include animation(candyy ease-in-out $unit-beta infinite forwards (-$unit-beta / $unit-alpha));
+
+  span {   
+    @for $i from 1 through $unit-alpha {
+      &:nth-child(#{$unit-alpha}n+#{$i}) {
+        @include animation(candy linear $unit-beta infinite forwards (-$unit-beta / $unit-alpha * $i));
+      }
+    }
+  }
 }
