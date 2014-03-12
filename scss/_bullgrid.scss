@@ -139,6 +139,13 @@
 }
 
 
+.small-g--spacing {
+  @include breakpoint(small) {
+    padding-left: $default-spacing;
+  }
+}
+
+
 
 
 

@@ -222,6 +222,10 @@ footer {
   margin-top: $unit--alpha * 2;
   padding-bottom: $unit--alpha * 4;
 
+  @include breakpoint(small) {
+    margin-left: $unit--alpha;
+  }
+
   .list__neutral {
   	li {
   		box-shadow: none;
