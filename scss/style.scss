@@ -34,14 +34,22 @@ body {
 	background: $fukkk-color--background;
 	color: $fukkk-color--background;
 
+  @include background(
+    linear-gradient(top, $fukkk-color--background, #666)
+  );
+
 	@include breakpoint(small) {
 		font-size: .85em;
 	}
 }
 
 .wrapper {
-	max-width: 80em;
+	max-width: 65em;
 	margin: 0 auto;
+
+	@include breakpoint(small) {
+		padding: 0 $unit--alpha;
+	}
 }
 
 a {
@@ -68,7 +76,7 @@ h2 {
 }
 
 h3 {
-	font: 400 3.5em $font--alpha;
+	font: 400 2.5em/1.35 $font--alpha;
 	text-align: center;
 	margin: $unit--alpha / 4 0 0 0;
 	color: #fff;
@@ -78,7 +86,11 @@ hr {
 	border: none;
 	height: $unit--alpha / 2;
 	background: #fff;
-	margin: $unit--alpha 0;
+	margin: $unit--alpha * 3 0;
+
+	@include breakpoint(small) {
+		margin: $unit--alpha * 6 0;
+	}
 }
 
 input[type="email"] {
@@ -152,21 +164,13 @@ button {
 
 	li {
 		position: relative;
-		padding-left: 2.25em;
+		padding-left: 1.35em;
+		padding-right: 2.25em;
 
 		&:before {
-			/*position: absolute;
-			top: 0;
-			left: 0;
-			text-align: center;
-			width: 100%;
-			padding: $unit--alpha / 2;
-			font-size: .85em;
-			line-height: .75em;
-			opacity: .5;*/
-			margin-left: -1.85em;
+			margin-left: -.95em;
 		  counter-increment: list__alpha; 
-		  content: "#" counter(list__alpha) " | ";
+		  content: "" counter(list__alpha) ". ";
 		}
 	}
 }
@@ -211,11 +215,12 @@ section {
 	}
 }
 
+
 footer {
 	@extend %block-white;
 
   margin-top: $unit--alpha * 2;
-  padding: 0 $unit--alpha 0 $unit--alpha;
+  padding-bottom: $unit--alpha * 4;
 
   .list__neutral {
   	li {
